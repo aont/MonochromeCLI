@@ -61,8 +61,8 @@ namespace Aont
             }
             sw.Stop();
             Console.WriteLine("{0} Seconds.", sw.Elapsed.TotalSeconds);
-            var SaveFileName = Path.Combine(Path.GetDirectoryName(OriginalPath), Path.GetFileNameWithoutExtension(OriginalPath) + "_mono.png");
-            Converted.Save(SaveFileName, ImageFormat.Png);
+            var SaveFileName = Path.Combine(Path.GetDirectoryName(OriginalPath), Path.GetFileNameWithoutExtension(OriginalPath) + "_mono.bmp");
+            Converted.Save(SaveFileName, ImageFormat.Bmp);
             Converted.Dispose();
         }
     }
